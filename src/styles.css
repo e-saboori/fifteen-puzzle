@@ -1,0 +1,19 @@
+.boxNumber:hover {
+  background-color: blueviolet;
+}
+
+.boxNumber {
+  width: 100px;
+  height: 100px;
+  margin: 2px;
+  border-radius: 20%;
+  font-size: xx-large;
+  font-weight: bold;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.canvas-board {
+  align-self: center;
+  width: 350px;
+  height: 350px;
+}

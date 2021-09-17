@@ -1,0 +1,13 @@
+import { Component } from "react";
+
+class Box extends Component {
+  constructor(props) {
+    super(props);
+  }
+
+  render() {
+    return <button className="boxNumber"> {this.props.name}</button>;
+  }
+}
+
+export default Box;
