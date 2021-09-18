@@ -1,8 +1,7 @@
-.boxNumber:hover {
-  background-color: blueviolet;
+.box-number:hover {
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.8);
 }
-
-.boxNumber {
+.box-number {
   width: 100px;
   height: 100px;
   margin: 2px;
@@ -14,6 +13,119 @@
 
 .canvas-board {
   align-self: center;
-  width: 350px;
-  height: 350px;
+  width: 400px;
+  height: 400px;
+}
+
+.canvas-board h1 {
+  text-align: center;
+}
+
+:host {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica,
+    Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-size: 14px;
+  color: #333;
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 8px 0;
+}
+
+p {
+  margin: 0;
+}
+
+.spacer {
+  flex: 1;
+}
+.top-banner {
+  height: 80px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+
+.toolbar {
+  margin: 10px;
+  height: 80px;
+  width: 80px;
+  background-color: white;
+  color: black;
+  font-weight: 600;
+}
+
+.toolbar span {
+  margin: 10px;
+}
+
+.toolbar img {
+  margin: 10px 20px;
+}
+
+.content {
+  display: flex;
+  margin: 150px auto 100px;
+  padding: 0 16px;
+  max-width: fit-content;
+  max-height: fit-content;
+  flex-direction: column;
+  align-items: center;
+}
+
+.content p {
+  text-align: center;
+}
+
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 16px;
+}
+
+.card-container .card:not(:last-child) {
+  margin-right: 0;
+}
+
+.card-container .card:not(.highlight-card) {
+  cursor: pointer;
+}
+
+.card-container .card:not(.highlight-card):hover {
+  transform: translateY(-3px);
+  box-shadow: 0 4px 17px rgba(0, 0, 0, 0.35);
+}
+
+.card-container .card:not(.highlight-card):hover .material-icons path {
+  fill: rgb(105, 103, 103);
+}
+
+.circle-link {
+  height: 40px;
+  width: 40px;
+  border-radius: 40px;
+  margin: 8px;
+  background-color: white;
+  border: 1px solid #eeeeee;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  transition: 1s ease-out;
+}
+
+.circle-link:hover {
+  transform: translateY(-0.25rem);
+  box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.2);
 }
